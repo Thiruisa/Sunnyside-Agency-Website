@@ -31,7 +31,7 @@ body, html {
     padding: 0;
     margin: 0 auto;
     width: 100%;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     font-size: 18px;
     min-height: 100%;
     font-family: "Barlow", sans-serif;
@@ -204,7 +204,7 @@ Large Screens
         text-align: left;
     }
 
-    .card-image{
+    .card-image1{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -343,7 +343,30 @@ Large Screens
         font-size: 0.7rem;
     }
 
+    /*gallery*/
+
+    .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery-img{
+        height: 40vh;
+    }
+
     /*footer*/
+
+    footer{
+        background-color: var(--primary-footer-bg-clr);
+        color: var(--primary-clr-footer);
+    }
+
+    .footer-title{
+        font-family: var(--family-2);
+        font-weight: 900;
+        font-size: 1.6rem;
+        padding: 3%;
+    }
 
     .attribution { 
         font-size: 11px; 
