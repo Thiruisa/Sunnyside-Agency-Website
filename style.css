@@ -31,10 +31,10 @@ body, html {
     padding: 0;
     margin: 0 auto;
     width: 100%;
-    /* max-width: 1440px; */
+    max-width: 1440px;
     font-size: 18px;
     min-height: 100%;
-    font-family: "Barlow", sans-serif;
+    font-family: var(--family-1);
 }
 
 a{
@@ -45,9 +45,9 @@ ul{
     list-style: none;
 }
 
-/***********
-Large Screens
-*************/
+/*****************************
+Media Query for Large Screens
+******************************/
 
 @media only screen and (min-width: 500px){
 
@@ -165,38 +165,39 @@ Large Screens
     }
 
 
-    /*middle section*/
+    /*services section*/
 
     main{
         display: block;
     }
 
-    .card-container{
+    .services-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr); /*fr - fration*/
         grid-template-rows: repeat(3, 1fr);
     }
 
-    .middle-section{
+    #services{
         text-align: center;
     }
 
-    .middle-section img{
+    #services img{
         width: 100%;
         max-width: 500px;
         display: block;
     }
-    .card-text{
+
+    .services-text{
         padding: 20%;
     }
 
-    .card-text h2{
-        font-family: vaar(--family-2);
+    .services-text h2{
+        font-family: var(--family-2);
         font-weight: 900;
         font-size: 1.4rem;
     }
 
-    .card-text p{
+    .services-text p{
         margin: 30px 0;
         color: var(--neutral-clr-600);
         font-size: 0.68rem;
@@ -204,7 +205,16 @@ Large Screens
         text-align: left;
     }
 
-    .card-image1{
+    .services-img1{
+        background-image: url("images/desktop/image-transform.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    
+    .services-img2{
+        background-image: url("images/desktop/image-stand-out.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -252,15 +262,7 @@ Large Screens
 
     /*offers*/
 
-    .offers{
-        text-align: center;
-    }
-
-    .offer-container{
-        display: flex;
-    }
-
-    .image-text1{
+    .offer-text1{
         margin: 0 auto;
         max-width: 40%;
         text-align: center;
@@ -269,13 +271,27 @@ Large Screens
         font-family: var(--family-2);
     }
 
-    .image-text2{
+    .offer-text2{
         margin: 0 auto;
         max-width: 40%;
         text-align: center;
         padding-top: 40%;
         color: var(--primary-clr-photography);
         font-family: var(--family-2);
+    }
+
+    .offer-container1{
+        background-image: url("images/desktop/image-graphic-design.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .offer-container2{
+        background-image: url("images/desktop/image-photography.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
 
