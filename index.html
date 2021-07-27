@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -16,16 +17,21 @@
       <div class="logo">
         <img src="images/logo.svg" alt="logo">
       </div>
+
       <div class="menu">
-        <a class="menu-items" href="#">About</a>
-        <a class="menu-items" href="#">Services</a>
-        <a class="menu-items" href="#">Projects</a>
-        <a class="menu-items contactBtn" href="#">Contact</a>
+        <a class="menu-items" href="#about">About</a>
+        <a class="menu-items" href="#services">Services</a>
+        <a class="menu-items" href="#projects">Projects</a>
+        <a class="menu-items contactBtn" href="#contacts">Contact</a>
       </div>
+
       <div class="hamburger">
-        <img src="images/icon-hamburger.svg" alt="Hamburger icon" onclick="toggle()"> 
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
     </div>
+    
     <div>
       <h1>We are creatives</h1>
       <div class="arrow">
@@ -34,7 +40,6 @@
     </div>
   </header>
   
-
   <main>
     <section id="services">
       <div class="services-container">
@@ -71,10 +76,7 @@
         </div>
       </div>
     </section>
-
-
     
-
     <section id="testimonial">
       <div class="testimonial-header">
         <h3>Client testimonials</h3>
@@ -97,7 +99,6 @@
           <div class="testimonial-img">
             <img class="test-img" src="images/image-thomas.jpg" alt="thomas">
           </div>
-          
 
           <p class="testimonial-text">
             Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
@@ -111,7 +112,6 @@
             <img class="test-img" src="images/image-jennie.jpg" alt="jennie">
           </div>
           
-
           <p  class="testimonial-text">
             Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
           <h3 class="client">Jennie F.</h3>
@@ -159,6 +159,7 @@
 
   </footer>
 
+  <script src="./script.js"></script>
 
 </body>
 </html>
